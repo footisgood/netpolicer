@@ -2,7 +2,6 @@ import requests , bs4
 
 url='https://fz.anjuke.com/community/jinana/o2' #晋安区房价
 url='https://fz.anjuke.com/community/o2'  #福州全市房价
-url='https://fz.anjuke.com/community/cangshan/o2'
 #为什么会是这样呢？我打开浏览器是正常的页面，用requests访问就不能得到
 headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit 537.36 (KHTML, like Gecko) Chrome","Accept": "text/html,application/xhtml+xml,application/xml; q=0.9,image/webp,*/*;q=0.8"}
 nno=0
@@ -31,7 +30,7 @@ def GetOnePage(url):
 print('The price sorted in Fuzhou , Jinanqu')
 print('No.     Name                   Price')
 GetOnePage(url)
-for n in range (2,10):
+for n in range (2,30):
     url1=url+'-p'+str(n)
     GetOnePage(url1)
 f.close()
