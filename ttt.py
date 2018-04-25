@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
-name_list = ['lambda=0', 'lambda=0.05', 'lambda=0.1', 'lambda=0.5']
-num_list = [52.4, 57.8, 59.1, 54.6]
+name_list = ['融信哈', '融信哈', '融信哈', '融信哈','融信哈']
+num_list = [52.4, 57.8, 59.1, 54.6 , 60.1]
 rects = plt.bar(range(len(num_list)), num_list, color='rgby')
 # X轴标题
 index = [0, 1, 2, 3]
