@@ -1,0 +1,5 @@
+在%homepath%下建立pip目录，里面新建pip.ini文件
+
+[global]
+trusted-host=mirrors.aliyun.com
+index-url=http://mirrors.aliyun.com/pypi/simple/
